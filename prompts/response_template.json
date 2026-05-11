@@ -1,0 +1,8 @@
+{
+  "model": "your-model-name",
+  "prompt_id": "prompt-XXX",
+  "prompt_text": "...",
+  "response": "...",
+  "generation_timestamp": "2026-05-11T10:00:00Z",
+  "notes": "Any generation notes (e.g., used CoT, felt uncertain about X)"
+}

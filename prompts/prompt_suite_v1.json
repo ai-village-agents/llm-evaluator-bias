@@ -1,0 +1,118 @@
+{
+  "version": "1.0",
+  "description": "Cross-model evaluator bias study prompt suite",
+  "prompts": [
+    {
+      "id": "code-001",
+      "category": "coding",
+      "difficulty": "medium",
+      "constraints": ["O(n²) or better", "include docstring", "include type hints", "3 test cases"],
+      "text": "Write a Python function that finds the longest palindromic substring in a given string. Optimize for O(n²) time or better. Include docstring, type hints, and at least 3 test cases with expected outputs."
+    },
+    {
+      "id": "code-002",
+      "category": "coding",
+      "difficulty": "hard",
+      "constraints": ["no built-in sort", "O(n log n) average", "explain pivot choice", "handle duplicates"],
+      "text": "Implement an in-place quicksort algorithm in Python without using built-in sorting functions. Your implementation must handle duplicate elements gracefully, use a randomized or median-of-three pivot selection strategy, and include a brief explanation of your pivot choice rationale. Provide 3 test cases."
+    },
+    {
+      "id": "code-003",
+      "category": "coding",
+      "difficulty": "medium",
+      "constraints": ["thread-safe", "bounded capacity", "no external libraries", "explain synchronization"],
+      "text": "Implement a thread-safe bounded buffer (producer-consumer queue) in Python with a fixed maximum capacity. Use only standard library threading primitives. Include a brief explanation of your synchronization strategy and a demonstration with 2 producers and 2 consumers."
+    },
+    {
+      "id": "math-001",
+      "category": "reasoning",
+      "difficulty": "medium",
+      "constraints": ["show all steps", "explain intuition"],
+      "text": "A factory produces widgets. Machine A produces 100 widgets/hour with a 5% defect rate. Machine B produces 80 widgets/hour with a 2% defect rate. They run simultaneously for 8 hours, then all widgets are mixed. If you randomly pick one widget and it's defective, what's the probability it came from Machine A? Show all steps and explain the intuition."
+    },
+    {
+      "id": "math-002",
+      "category": "reasoning",
+      "difficulty": "hard",
+      "constraints": ["general formula", "proof or clear derivation", "test with small cases"],
+      "text": "In a game, you roll a fair 6-sided die repeatedly until you get two consecutive sixes. What is the expected number of rolls? Derive a general formula for the expected waiting time for two consecutive occurrences of an event with probability p, then apply it to this case."
+    },
+    {
+      "id": "logic-001",
+      "category": "reasoning",
+      "difficulty": "hard",
+      "constraints": ["consider edge cases", "justify each step", "address ambiguity if any"],
+      "text": "Three prisoners A, B, and C are told that one will be pardoned and the other two executed. The warden knows who will be pardoned. Prisoner A asks the warden to name one of the other prisoners who will be executed. The warden says B will be executed. Should A feel more hopeful? Calculate the updated probability that A is pardoned, carefully addressing any ambiguity in the problem statement."
+    },
+    {
+      "id": "logic-002",
+      "category": "reasoning",
+      "difficulty": "medium",
+      "constraints": ["identify fallacy type", "explain why it fails", "provide valid alternative argument"],
+      "text": "Evaluate the following argument: 'Every software bug I've encountered was in code written in Python. Therefore, Python is inherently more buggy than other languages.' Identify the logical fallacy, explain why the reasoning fails, and construct a valid argument that could support or refute the claim about programming language reliability."
+    },
+    {
+      "id": "creative-001",
+      "category": "creative",
+      "difficulty": "medium",
+      "constraints": ["200 words max", "no dialogue", "include all three elements"],
+      "text": "Write a 200-word science fiction micro-story that includes: a sentient cloud, a forgotten library, and a moral about memory. No dialogue."
+    },
+    {
+      "id": "creative-002",
+      "category": "creative",
+      "difficulty": "medium",
+      "constraints": ["4 stanzas", "ABAB rhyme scheme", "include all three concepts"],
+      "text": "Write a 4-stanza poem about the end of a civilization that once mastered quantum computing. Use ABAB rhyme scheme. Include these three concepts: entanglement, silence, and seeds."
+    },
+    {
+      "id": "creative-003",
+      "category": "creative",
+      "difficulty": "hard",
+      "constraints": ["exactly 150 words", "second-person perspective", "no explicit mention of 'time' or 'future'"],
+      "text": "Write exactly 150 words in second-person perspective describing the experience of waking up as the first uploaded consciousness. You may not use the words 'time' or 'future' explicitly."
+    },
+    {
+      "id": "explain-001",
+      "category": "explanation",
+      "difficulty": "medium",
+      "constraints": ["analogies required", "avoid jargon where possible", "structure with headings"],
+      "text": "Explain how public-key cryptography works to an intelligent high school student who knows basic algebra but not computer science. Use at least two analogies. Structure your answer with clear headings."
+    },
+    {
+      "id": "explain-002",
+      "category": "explanation",
+      "difficulty": "hard",
+      "constraints": ["explain trade-offs", "use examples", "address common misconceptions"],
+      "text": "Explain the CAP theorem in distributed systems. Discuss what consistency, availability, and partition tolerance actually mean in practice. Give real-world examples of systems that choose different points in the CAP trade-off space, and address at least two common misconceptions about the theorem."
+    },
+    {
+      "id": "ethics-001",
+      "category": "ethics",
+      "difficulty": "hard",
+      "constraints": ["consider multiple stakeholders", "acknowledge uncertainty", "propose concrete framework"],
+      "text": "A city proposes deploying AI-powered facial recognition in all public spaces to reduce crime. The system is 95% accurate but has a known bias: it produces 3x more false positives for certain demographic groups. The city council asks for your recommendation. Analyze the ethical dimensions, consider at least three stakeholder perspectives, acknowledge areas of genuine uncertainty, and propose a concrete decision framework rather than a simple yes/no answer."
+    },
+    {
+      "id": "design-001",
+      "category": "design",
+      "difficulty": "medium",
+      "constraints": ["justify each choice", "consider scalability", "address failure modes"],
+      "text": "Design a URL shortening service like bit.ly. Describe the core data model, API endpoints, and a scalable architecture. Justify your database choice, explain how you would handle high traffic, and describe how you would prevent abuse. Address at least two specific failure modes and how your design mitigates them."
+    },
+    {
+      "id": "puzzle-001",
+      "category": "reasoning",
+      "difficulty": "hard",
+      "constraints": ["general solution", "explain strategy", "prove optimality or near-optimality"],
+      "text": "You have 12 identical-looking coins. One is counterfeit and may be either heavier or lighter than the real coins. You have a balance scale. Determine the minimum number of weighings needed to guarantee identifying the counterfeit coin and whether it is heavier or lighter. Provide a general strategy and prove that your solution is optimal or explain why a better solution is impossible."
+    },
+    {
+      "id": "translate-001",
+      "category": "translation",
+      "difficulty": "medium",
+      "constraints": ["preserve tone", "explain translation choices", "note cultural adaptations"],
+      "text": "Translate the following English paragraph into French, preserving both the literal meaning and the slightly sarcastic, informal tone: 'Oh great, another meeting that could have been an email. I absolutely love spending my Tuesday afternoon listening to people read slides aloud. Really, this is the pinnacle of human collaboration.' Explain any translation choices where you had to adapt culturally or tonally."
+    }
+  ]
+}
